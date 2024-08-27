@@ -1,0 +1,72 @@
+Month 1: Basic Data Structures
+        Week 1: Arrays - Understanding structure, memory allocation, and basic operations.
+        Week 2: Strings - Operations, string manipulation, and common string algorithms.
+        Week 3: Stacks - Implementing using arrays/linked lists, understanding LIFO.
+        Week 4: Queues - Implementing using arrays/linked lists, understanding FIFO.
+
+Month 2: Basic Algorithms
+        Week 1: Sorting Algorithms - Bubble, Selection, Insertion Sort.
+        Week 2: Advanced Sorting Algorithms - Merge, Quick, Heap Sort.
+        Week 3: Searching Algorithms - Linear, Binary, Jump, Interpolation, Exponential Search.
+        Week 4: Recursion - Understanding principles, common recursive problems.
+
+Month 3: Intermediate Data Structures
+        Week 1: Linked Lists - Singly, doubly, and circular linked lists.
+        Week 2: Trees - Binary trees, tree traversal algorithms (inorder, preorder, postorder).
+        Week 3: Binary Search Trees (BSTs) - Operations and applications.
+        Week 4: Heaps and Priority Queues - Heap operations, understanding binary heaps.
+
+Month 4: Complex Data Structures
+        Week 1: Hash Tables - Hashing functions, collision resolution strategies.
+        Week 2: Advanced Tree Structures - AVL trees, Red-Black trees.
+        Week 3: Tries (Prefix Trees) - Implementation and use-cases.
+        Week 4: Segment Trees and Fenwick Trees (Binary Indexed Trees) - Range queries, updates.
+
+Month 5: Advanced Algorithms
+        Week 1: Backtracking - Solving problems like the N-Queen problem, Sudoku solver.
+        Week 2: Greedy Algorithms - Concept, applications, activity selection problem.
+        Week 3: Divide and Conquer Strategies - In-depth study of Merge Sort, Quick Sort.
+        Week 4: Dynamic Programming - Memoization, tabulation, common DP problems.
+
+Month 6: Graphs, Network Algorithms, and System Design Deep Dive
+        Week 1: Graphs - Representations (adjacency matrix/list), basic graph algorithms (DFS, BFS).
+        Week 2: Advanced Graph Algorithms - Dijkstra’s, Bellman-Ford, Floyd-Warshall algorithms.
+        Week 3: Network Flow Algorithms - Ford-Fulkerson, Edmonds-Karp.
+
+
+System Design
+Month 1: Introduction to System Design
+    Week 1: Basics of System Design - Understanding scalability, availability, and reliability.
+    Week 2: Client-Server Model - Understanding the client-server architecture, its advantages, and limitations.
+    Week 3: Peer-to-Peer Model - Understanding the peer-to-peer architecture, its advantages, and limitations.
+    Week 4: Microservices Architecture - Understanding the microservices architecture, its advantages, and limitations.
+
+Month 2: Databases and Storage Systems
+    Week 1: SQL Databases - Understanding structure, operations, and basic SQL queries.
+    Week 2: NoSQL Databases - Understanding structure, operations, and basic NoSQL queries.
+    Week 3: Database Sharding - Understanding the concept of sharding and its use-cases.
+    Week 4: Storage Systems - Deep dive into different storage systems like relational databases, NoSQL databases, distributed file systems, and object storage.
+
+Month 3: Caching, Load Balancing, and Networking
+    Week 1: Caching - Understanding the concept of caching, cache eviction policies, and common caching strategies.
+    Week 2: Load Balancing - Understanding the concept of load balancing and common load balancing algorithms.
+    Week 3: CDN (Content Delivery Network) - Understanding the concept of CDN and its use-cases.
+    Week 4: Networking - Basics of computer networking, understanding protocols like HTTP, TCP/IP, understanding concepts like latency, bandwidth, and throughput.
+
+Month 4: Asynchronous Processing, Message Queues, and Distributed Systems
+    Week 1: Asynchronous Processing - Understanding the concept of asynchronous processing and its advantages.
+    Week 2: Message Queues - Understanding the concept of message queues and their use-cases.
+    Week 3: Distributed Systems - Understanding the principles of distributed computing and common challenges like data consistency, partition tolerance, and consensus algorithms.
+    Week 4: MapReduce - Understanding the concept of MapReduce and its use-cases.
+
+Month 5: Security, Rate Limiting, and Miscellaneous Topics
+    Week 1: Basics of Network Security - Understanding the basics of network security, SSL, TLS, and HTTPS.
+    Week 2: OAuth - Understanding the concept of OAuth and its use-cases.
+    Week 3: API Rate Limiting - Understanding the concept of API rate limiting and its use-cases.
+    Week 4: CAP Theorem - Understanding the CAP theorem and its implications on system design.
+
+Month 6: Designing Real-World Systems
+    Week 1: Designing Instagram - Understanding the design considerations for a system like Instagram.
+    Week 2: Designing Twitter - Understanding the design considerations for a system like Twitter.
+    Week 3: Designing Uber - Understanding the design considerations for a system like Uber.
+    Week 4: Designing Netflix - Understanding the design considerations for a system like Netflix.
