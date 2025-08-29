@@ -1036,41 +1036,53 @@ class CircularLinkedList:
             print("Circular linked list is empty")
             return
 
-        current_node = self.head
-        prev_node = None
-        while current_node.next != self.head:
+        if self.head.data == data:
+            if self.head.next == self.head:  # Only one node in the list
+                self.head = None
+                return
+            else:
+                current_node = self.head
+                while current_node.next != self.head:
+                    current_node = current_node.next
+                current_node.next = self.head.next
+                self.head = self.head.next
+                return
+
+        prev_node = self.head
+        current_node = self.head.next
+        while current_node != self.head:
             if current_node.data == data:
-                if not prev_node:
-                    self.head = current_node.next
-                else:
-                    prev_node.next = current_node.next
-                current_node.next = None
+                prev_node.next = current_node.next
                 return
             prev_node = current_node
             current_node = current_node.next
-
-        if current_node.data == data:
-            self.head = None
+        
+        print(f"Node with data {data} not found.")
 
     def traverse(self):
         if not self.head:
             print("Circular linked list is empty")
             return
+        
         current_node = self.head
-        while current_node.next != self.head:
-            print(current_node.data)
+        while True:
+            print(current_node.data, end=" -> ")
             current_node = current_node.next
-
+            if current_node == self.head:
+                break
+        print("Head")
+        
     def search(self, element):
         if not self.head:
-            print("Circular linked list is empty")
-            return
+            return False
+            
         current_node = self.head
-        while current_node.next != self.head:
+        while True:
             if current_node.data == element:
-                print(f"Found {element}")
-                break
+                return True
             current_node = current_node.next
+            if current_node == self.head:
+                return False
 ```
 
 # Trees
@@ -2961,3 +2973,4 @@ def removeDuplicates(nums):
 
     return i + 1
 ```
+
