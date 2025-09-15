@@ -2267,11 +2267,9 @@ class Node:
 class SegmentTree:
     def __init__(self, arr):
         self.arr = arr
-        self.tree = self.build_tree(arr, 0, len(arr) - 1)
+        self.root = self.build_tree(self.arr, 0, len(self.arr) - 1)
 
     def build_tree(self, arr, start, end):
-        if start > end:
-            return None
         if start == end:
             return Node(arr[start])
 
@@ -2279,19 +2277,12 @@ class SegmentTree:
         left_child = self.build_tree(arr, start, mid)
         right_child = self.build_tree(arr, mid + 1, end)
 
-        node = Node(0)
-        if left_child:
-            node.data = node.data + left_child.data
-            node.left = left_child
-        if right_child:
-            node.data = node.data + right_child.data
-            node.right = right_child
-
+        node = Node(left_child.data + right_child.data)
+        node.left = left_child
+        node.right = right_child
         return node
 
     def query(self, root, query_start, query_end, start, end):
-        if not root:
-            return 0
         if start > query_end or end < query_start:
             return 0
 
@@ -2300,7 +2291,7 @@ class SegmentTree:
 
         mid = (start + end) // 2
         left_sum = self.query(root.left, query_start, query_end, start, mid)
-        right_sum = self.query(root.right ,query_start, query_end, mid + 1, end)
+        right_sum = self.query(root.right, query_start, query_end, mid + 1, end)
 
         return left_sum + right_sum
 
@@ -2308,18 +2299,15 @@ class SegmentTree:
         if start == end:
             self.arr[index] = value
             root.data = value
-        else:
-            mid = (start + end) // 2
-            if start <= index <= mid:
-                self.update(root.left, index, value, start, mid)
-            else:
-                self.update(root.right, index, value, mid + 1, end)
+            return
 
-        root.data = 0
-        if root.left:
-            root.data = root.data + root.left.data
-        if root.right:
-            root.data = root.data + root.right.data
+        mid = (start + end) // 2
+        if start <= index <= mid:
+            self.update(root.left, index, value, start, mid)
+        else:
+            self.update(root.right, index, value, mid + 1, end)
+
+        root.data = root.left.data + root.right.data
 ```
 # Fenwick Trees (Binary Indexed Trees)
 
@@ -2973,4 +2961,5 @@ def removeDuplicates(nums):
 
     return i + 1
 ```
+
 
