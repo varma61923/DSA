@@ -2340,7 +2340,7 @@ The time complexity of both point update and range sum query operations in a Fen
 Array: 1 3 5 7 9 11 13 15
 Index: 1 2 3 4 5 6 7  8
 Array: 1 4 5 16 9 20 13 64
-``
+```
 ```python
 class FenwickTree:
     def __init__(self, size):
@@ -2961,5 +2961,6 @@ def removeDuplicates(nums):
 
     return i + 1
 ```
+
 
 
